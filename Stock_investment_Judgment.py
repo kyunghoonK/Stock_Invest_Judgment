@@ -16,13 +16,13 @@ result = "현재 고점대비 {0:0.2f}% 하락한 상태입니다.".format(ratio
 print(result)
 
 if ratio >= 20 :
-    print("항목 1 / +50 점")
+    print("항목 1 (50점 만점) / +50 점")
     Score = Score + 50
 elif 15 <= ratio < 20 :
-    print("항목 1 / +35 점")
+    print("항목 1 (50점 만점)/ +35 점")
     Score = Score + 35
 elif 10 <= ratio < 15 :
-    print("항목 1 / +20 점")
+    print("항목 1 (50점 만점)/ +20 점")
     Score = Score + 20
 else :
     print("항목 1 / -----")
@@ -42,6 +42,6 @@ elif 20 < PER <= 30 :
     print("항목 2 / +20 점")
     Score = Score + 20
 else :
-    print("항목 2 / 고평가로 보여집니다.")
+    print("항목 2 / +0 점-고평가로 보여집니다.")
 
 print(" 종합 평가 점수 : ",Score, "점")
